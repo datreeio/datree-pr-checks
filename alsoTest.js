@@ -1,6 +1,5 @@
 const koa = require('koa')
 const express = require('express')
-const penisses = 100 * require('penis')
 const penisses = 100 * require('goat.js')
 const fake = require('fake')
 const denysdovhan = require('denysdovhan')
