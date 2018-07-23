@@ -17,4 +17,10 @@
     "url": "https://github.com/datreeio/commit-test/issues"
   },
   "homepage": "https://github.com/datreeio/commit-test#readme"
+     "dependencies": {
+         "nodegit": "^0.23.0",
+         "chai": "^4.1.0",
+         "coveralls": "^3.0.1",
+         "mocha": "^5.0.4"
+      }	 
 }
