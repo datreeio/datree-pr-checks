@@ -19,20 +19,20 @@ datree is now integrated with GitHub checks, so for every pull request, we will 
 |Categories|Event Details|
 |:---|:---|
 |:tada: New Code Components	| New code components in the scope of your repository and organization|
-|:package: Version Changes	| All the version changes (upgrade / downgrade) made in pull request |
+|:package: Version Changes	| All the version changes (upgrade / downgrade) made in the pull request |
 |:outbox_tray: Removed Code Components | Code components which removed from your manifest file |
 |:chart_with_upwards_trend: Usage Digest | In each files there was a code component related event (add / updated / removed) |
 
 :point_right: &nbsp;&nbsp; We will also provide info about **how many people and repositories** are using each code component in your organization, or if it a **new code component** in your organization dev stack! &nbsp;&nbsp; :point_left:
 
 ***
-### Cut the BS (:poop:), I want to see how it looks like!
+### Cut the BS (:poop:), I want to see what it looks like!
 
-You can checkout the open Pull requests in this repository - [this one](https://github.com/datreeio/datree-pr-checks/pull/5) is a good exmaple :shipit:
+You can checkout the open pull requests in this repository - [this one](https://github.com/datreeio/datree-pr-checks/pull/5) is a good exmaple :octocat:
 
 ***
 ### What is Next on our Roadmap?
-:black_square_button: More builtin best practice verification   
+:black_square_button: More built-in best practice verification   
 :black_square_button: Custom policy rules verification   
 :black_square_button: PR repositories managment  
 
