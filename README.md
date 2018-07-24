@@ -10,13 +10,13 @@ datree is now integrated with GitHub checks, so for every pull request, we will 
 ***
 
 ### Insights Layer:
-##### 1) Repository Related:
+#### 1) Repository Related:
 :black_small_square: When was the last commit to the default branch  
 :black_small_square: When was the last commit by the pull request opener to the default branch  
 :black_small_square: Code contributing percentage by the the pull request opener to the default branch  
 
-##### 2) Code Components Related:
-|Categories|Events|
+#### 2) Code Components Related:
+|Categories|Event Details|
 |:---|:---|
 |:tada: New Code Components	| New code components in the scope of your repository and organization|
 |:package: Version Changes	| All the version changes (upgrade / downgrade) made in pull request |
