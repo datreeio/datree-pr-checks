@@ -1,6 +1,6 @@
 ## The power of datree catalog in context of your pull request! :sunglasses:
 
-datree is now integrated with GitHub checks, so for every pull request, we will provide a layer of best practice & insights based on your organization catalog.
+datree can now be integrated with GitHub checks, so for every pull request, datree BOT will provide a layer of best practice & insights based on your organization catalog.
 
 ***
 ### Best Practice Verification:
@@ -13,7 +13,7 @@ datree is now integrated with GitHub checks, so for every pull request, we will 
 #### 1) Repository Related:
 :black_small_square: When was the last commit to the default branch  
 :black_small_square: When was the last commit by the pull request opener to the default branch  
-:black_small_square: Code contributing percentage by the the pull request opener to the default branch  
+:black_small_square: Code contributing percentage by the pull request opener to the default branch  
 
 #### 2) Code Components Related:
 |Categories|Event Details|
@@ -40,7 +40,7 @@ You can checkout the open pull requests in this repository - [this one](https://
 
 ***
 
-#### :book: &nbsp;&nbsp;Glossary
+### :book: &nbsp;&nbsp;Glossary
 **Unused Code Component in Manifest** - this is when open sources or internal packages are listed in the manifest file but are not imported into any of the files in the repository. Removing extraneous code components will save build time, and long-term maintenance overhead, but will have no effect on your code.
 
 **Unverified Users** - this happens when the git author info is different than the git committer details. If you authored the code and made the commit, you should adjust your settings to match your GitHub account in order to connect the commit to the correct GitHub user.
