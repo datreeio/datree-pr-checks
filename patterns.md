@@ -1,6 +1,6 @@
 ## Secrets
 
-|Name||Pattern|
+|Name|Pattern|
 |:---|:---|
 |AWS_Credentials|\*\*/{.,\*}aws/credentials|
 |SSH rsa / dsa|\*\*/id_{r,d}sa|
@@ -8,7 +8,7 @@
 
 ## Mandatory Files
 
-|Name||Pattern|
+|Name|Pattern|
 |:---|:---|
 |gitignore|.gitignore|
 
@@ -16,7 +16,7 @@
 
 #### Python:
 
-|Name||Pattern|
+|Name|Pattern|
 |:---|:---|
 |wheels|\*\*/wheels/\*\*|
 |var|\*\*/var/\*\*|
@@ -26,27 +26,27 @@
 
 #### Node.js
 
-|Name||Pattern|
+|Name|Pattern|
 |:---|:---|
 |node_modules|\*\*/node_modules/\*\*|
 |jspm_packages|\*\*/jspm_packages/\*\*|
 
 #### Ruby
 
-|Name||Pattern|
+|Name|Pattern|
 |:---|:---|
 |bundle|\*\*/.bundle/\*\*|
 |vendor_bundle|\*\*/vendor/bundle/\*\*|
 
 #### VisualStudio
 
-|Name||Pattern|
+|Name|Pattern|
 |:---|:---|
 |packages|\*\*/+(P\|p)ackages/!(build)/\*\*|
 
 ## Unwanted Files
 
-|name|pattern|
+|Name|Pattern|
 |:---|:---|
 |VSCode|\*\*/.vscode/\*|
 |IntelliJ|\*\*/.idea/\*|
