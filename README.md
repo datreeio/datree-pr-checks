@@ -35,4 +35,5 @@ You can checkout the open pull requests in this repository - [this one](https://
 
 ***
 
+### :book: &nbsp;&nbsp;Glossary
 **Code Components** - These are the building blocks used to build applications and have a footprint in your codebase. Code component can be different types of technologies (e.g. docker), open source (e.g npm/express), internal packages or any other “lego bricks” defined by the organization.
