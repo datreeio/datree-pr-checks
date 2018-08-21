@@ -35,9 +35,4 @@ You can checkout the open pull requests in this repository - [this one](https://
 
 ***
 
-### :book: &nbsp;&nbsp;Glossary
-**Unused Code Component in the Manifest** - This is when open sources or internal packages are listed in the manifest file but are not imported into any of the files in the repository. Removing extraneous code components will save build time, and long-term maintenance overhead, but will have no effect on your code.
-
-**Unverified Users** - This happens when the git author info is different than the git committer details. If you authored the code and made the commit, you should adjust your settings to match your GitHub account in order to connect the commit to the correct GitHub user.
-
 **Code Components** - These are the building blocks used to build applications and have a footprint in your codebase. Code component can be different types of technologies (e.g. docker), open source (e.g npm/express), internal packages or any other “lego bricks” defined by the organization.
