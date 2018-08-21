@@ -3,11 +3,6 @@
 datree can be integrated with GitHub checks, so for every pull request, the datree BOT will provide a layer of best practices & insights based on your organization’s catalog.
 
 ***
-### Best Practice Verification:
-#### 1) Unused Code Components in the Manifest
-#### 2) Unverified Users
-
-***
 
 ### Insights Layer:
 #### 1) Repository Related:
@@ -28,7 +23,7 @@ datree can be integrated with GitHub checks, so for every pull request, the datr
 ***
 ### Cut the BS (:poop:), I want to see what it looks like!
 
-You can checkout the open pull requests in this repository - [this one](https://github.com/datreeio/datree-pr-checks/pull/5) is a good exmaple :octocat:
+You can checkout the open pull requests in this repository - [this one](https://github.com/datreeio/datree-pr-checks/pull/5/checks?check_run_id=9131499) is a good exmaple :octocat:
 
 ***
 ### Next on datree’s Roadmap
