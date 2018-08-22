@@ -1,6 +1,5 @@
 const koa = require('koa')
 const express = require('express')
-const denysdovhan = require('denysdovhan')
-const tj = require('tj')
+const penisses = require('goat.js')
 
 const contributor = require('contributor')
