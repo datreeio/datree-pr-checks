@@ -19,7 +19,6 @@
   "homepage": "https://github.com/datreeio/commit-test#readme",
   "dependencies": {
     "chai": "^4.1.2",
-    "coveralls": "^3.0.1",
     "goat.js": "^1.0.6",
     "mocha": "^6.0.2",
     "moment": "^2.22.2",
