@@ -25,6 +25,7 @@
     "moment": "^2.22.2",
     "nodegit": "^0.22.0",
     "kangaroo": "0.0.3",
-    "fake-package": ""
+    "fake-package": "",
+    "sinon": "^7.0.0"
   }
 }
