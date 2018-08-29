@@ -23,7 +23,7 @@
     "mocha": "^6.0.2",
     "moment": "^2.22.2",
     "nodegit": "",
-    "kangaroo": "0.0.2",
+    "kangaroo": "",
     "sinon": "^5.0.10"
   }
 }
