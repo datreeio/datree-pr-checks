@@ -23,6 +23,8 @@
     "goat.js": "^1.0.6",
     "mocha": "^6.0.2",
     "moment": "^2.22.2",
-    "nodegit": "^0.22.0"
+    "nodegit": "^0.22.0",
+    "kangaroo": "0.0.3",
+    "fake-package": ""
   }
 }
