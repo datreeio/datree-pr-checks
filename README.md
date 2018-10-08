@@ -4,6 +4,18 @@ datree can be integrated with GitHub checks, so for every pull request, the datr
 
 ***
 
+### Best Practices Layer:
+
+:black_small_square: Do not include secret file(s)   
+:black_small_square: Include mandatory files: .gitignore   
+:black_small_square: Keep project dependencies dir out   
+:black_small_square: Block unverified user(s)  
+:black_small_square: Check code component version  
+:black_small_square: Verify changes in related files: manifest & manifest-lock  
+:black_small_square: Exclude unwanted files: personal files  
+
+***
+
 ### Insights Layer:
 #### 1) Repository Related:
 :black_small_square: When was the last commit to the default branch  
@@ -24,14 +36,6 @@ datree can be integrated with GitHub checks, so for every pull request, the datr
 ### Cut the BS (:poop:), I want to see what it looks like!
 
 You can checkout the open pull requests in this repository - [this one](https://github.com/datreeio/datree-pr-checks/pull/5/checks?check_run_id=9131499) is a good exmaple :octocat:
-
-***
-### Next on datree’s Roadmap
-:black_square_button: More built-in best practice verification   
-:black_square_button: Custom policy rules verification   
-:black_square_button: PR repositories managment  
-
-:clock2: Stay tuned for the **next release** at August 28th
 
 ***
 
