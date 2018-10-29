@@ -8,10 +8,10 @@ jobs:
       - image: circleci/circleci-cli:0.1.2709
     steps:
       - run: curl https://s3.amazonaws.com/datreeio-static/versions.json > versions.json
+      - datree/compare-versions:
+          file_path: ./versions.json
 workflows:
   build_and_test:
     jobs:
       - extract-versions
-      - datree/compare-versions:
           context: datree-api-key
-          file_path: ./versions.json
