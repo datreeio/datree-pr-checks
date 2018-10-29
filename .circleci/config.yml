@@ -2,12 +2,16 @@ version: 2.1
 orbs:
   datree: datree/compare-versions@dev:0.0.6
 
+jobs:
+  extract-versions:
+    docker:
+      - image: circleci/circleci-cli:0.1.2709
+    steps:
+      - run: curl s3://datreeio-static/versions.json > versions.json
 workflows:
   build_and_test:
     jobs:
-      - run:
-          name: Extract verrsion
-          command: curl s3://datreeio-static/versions.json > versions.json
+      - extract-versions
       - datree/compare-versions:
           context: datree-api-key
           file_path: ./versions.json
