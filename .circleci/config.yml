@@ -13,5 +13,5 @@ jobs:
 workflows:
   build_and_test:
     jobs:
-      - extract-versions
+      - extract-versions:
           context: datree-api-key
