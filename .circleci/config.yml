@@ -5,7 +5,7 @@ orbs:
 jobs:
   extract-versions:
     docker:
-      - image: circleci/circleci-cli:0.1.2709
+      - image: circleci/node:8
     steps:
       - run: curl s3://datreeio-static/versions.json > versions.json
 workflows:
