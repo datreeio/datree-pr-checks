@@ -2,7 +2,6 @@ version: 2.1
 orbs:
   datree: datree/compare-versions@dev:0.0.4
 
-
 workflows:
   build_and_test:
     jobs:
