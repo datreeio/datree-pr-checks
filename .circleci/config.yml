@@ -7,7 +7,11 @@ jobs:
     docker:
       - image: circleci/circleci-cli:0.1.2709
     steps:
-      - run: curl https://s3.amazonaws.com/datreeio-static/versions.json > versions.json
+      - run: curl https://s3.amazonaws.com/datreeio-static/versions.json > temp/versions.json
+      - persist_to_workspace:
+          root: temp
+          paths:
+            - versions.json
 
 workflows:
   build_and_test:
