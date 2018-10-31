@@ -7,7 +7,6 @@ jobs:
     docker:
       - image: circleci/circleci-cli:0.1.2709
     steps:
-      - name: Version Extraction
       - run: echo "running version extraction script"
       # this is a mock demo - running a script to extract the package versions that were installed during the build
 
