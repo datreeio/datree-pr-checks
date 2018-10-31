@@ -6,13 +6,11 @@ jobs:
   extract-versions:
     docker:
       - image: circleci/circleci-cli:0.1.2709
-    working_directory: ~/
     steps:
-      - run: curl https://s3.amazonaws.com/datreeio-static/versions.json > ~/versions.json
-      - persist_to_workspace:
-          root: ~/
-          paths:
-            - versions.json
+      - name: Version Extraction
+      - run: echo "running version extraction script"
+      # this is a mock demo - running a script to extract the package versions that were installed during the build
+
 
 workflows:
   build_and_test:
@@ -22,4 +20,4 @@ workflows:
           requires: 
             - extract-versions
           context: datree-api-key
-          file_path: ~/versions.json
+          file_path: ./versions.json
