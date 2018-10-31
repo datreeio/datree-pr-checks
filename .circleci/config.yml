@@ -22,4 +22,4 @@ workflows:
           requires: 
             - extract-versions
           context: datree-api-key
-          file_path: ./versions.json
+          file_path: ~/versions.json
