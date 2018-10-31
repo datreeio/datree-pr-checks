@@ -10,7 +10,6 @@ jobs:
       - run: echo "running version extraction script"
       # this is a mock demo - running a script to extract the package versions that were installed during the build
 
-
 workflows:
   build_and_test:
     jobs:
