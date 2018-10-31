@@ -14,5 +14,7 @@ workflows:
     jobs:
       - extract-versions
       - datree/compare-versions:
+          requires: 
+            - extract-versions
           context: datree-api-key
           file_path: ./versions.json
