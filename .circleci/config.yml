@@ -18,4 +18,4 @@ workflows:
           requires: 
             - extract-versions
           context: datree-api-key
-          payload: '{"expected": [{"name":"webpack-node-externals","category":"npm","version":"1.7.2"},{"name":"webpack-dev-server","category":"npm","version":"2.11.1"}],"actual": [{"name":"webpack-node-externals","category":"npm","version":"1.7.2"},{"name":"webpack-dev-server","category":"npm","version":"2.11.3"}]}'
+          file_path: ./versions.json
