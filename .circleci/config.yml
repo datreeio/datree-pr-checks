@@ -1,23 +1,26 @@
-version: 2
+version: 2.1
+orbs:
+  datree: datree/version-alignment-rule@1.0.0
+
 jobs:
-  build:
+  extract-versions:
     docker:
-      - image: circleci/node:7.10
-
-    working_directory: ~/repo
-
+      - image: circleci/circleci-cli:0.1.2709
     steps:
-      - checkout
-
-      - run:
-          name: Run datree Policy - Direct
-          command: |
-              echo "curling policy service $CIRCLE_PROJECT_REPONAME on ppr number ${CIRCLE_PULL_REQUEST##*/}"
-              curl -X POST https://gateway.datree.io/v1/policy/codecomponents/versions/validate -H 'Content-Type: application/json' -H 'x-datreeio-api-key: '$API_KEY -d '{"repositoryOwner": "datreeio","repositoryName": "'$CIRCLE_PROJECT_REPONAME'", "pullRequestNumber": "'${CIRCLE_PULL_REQUEST##*/}'","codeComponents": {"expected": [{"name":"webpack-node-externals","category":"npm","version":"1.7.2"},{"name":"webpack-dev-server","category":"npm","version":"2.11.1"}],"actual": [{"name":"webpack-node-externals","category":"npm","version":"1.7.2"},{"name":"webpack-dev-server","category":"npm","version":"2.11.3"}]}}'
+      - run: echo "running version extraction script"
+      # this is a mock demo - running a script to extract the package versions that were installed during the build
 
 workflows:
-  version: 2
   build_and_test:
     jobs:
-      - build:
+      - extract-versions
+      - datree/version-alignment-rule:
+          requires: 
+            - extract-versions
           context: datree-api-key
+          payload: '{
+            "expected": 
+              [{"name":"webpack-node-externals","category":"npm","version":"1.6.8"}],
+            "actual":
+              [{"name":"webpack-node-externals","category":"npm","version":"1.6.2"}]
+          }'
