@@ -13,6 +13,7 @@ jobs:
           name: Run datree Policy - Direct
           command: |
               echo "curling policy service $CIRCLE_PROJECT_REPONAME on ppr number ${CIRCLE_PULL_REQUEST##*/}"
+              echo "the value of CIRCLE_PULL_REQUEST is $CIRCLE_PULL_REQUEST"
               curl -X POST https://gateway.datree.io/v1/policy/codecomponents/versions/validate -H 'Content-Type: application/json' -H 'x-datreeio-api-key: '$API_KEY -d '{"repositoryOwner": "datreeio","repositoryName": "'$CIRCLE_PROJECT_REPONAME'", "pullRequestNumber": "'${CIRCLE_PULL_REQUEST##*/}'","codeComponents": {"expected": [{"name":"webpack-node-externals","category":"npm","version":"1.7.2"},{"name":"webpack-dev-server","category":"npm","version":"2.11.1"}],"actual": [{"name":"webpack-node-externals","category":"npm","version":"1.7.2"},{"name":"webpack-dev-server","category":"npm","version":"2.11.3"}]}}'
 
 workflows:
