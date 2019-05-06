@@ -1,4 +1,4 @@
-## Harness the intelligence of datree’s code components catalog in the context of your pull request! :sunglasses:
+## Harness the intelligence of datree’s code components catalog in the context of your pull request! :sunglasses: test
 
 datree can be integrated with GitHub checks, so for every pull request, the datree BOT will provide a layer of best practices & insights based on your organization’s catalog.
 
