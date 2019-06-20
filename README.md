@@ -38,6 +38,7 @@ datree can be integrated with GitHub checks, so for every pull request, the datr
 You can checkout the open pull requests in this repository - [this one](https://github.com/datreeio/datree-pr-checks/pull/5/checks?check_run_id=9131499) is a good exmaple :octocat:
 
 ***
+// Halloo!
 
 ### :book: &nbsp;&nbsp;Glossary
 **Code Components** - These are the building blocks used to build applications and have a footprint in your codebase. Code component can be different types of technologies (e.g. docker), open source (e.g npm/express), internal packages or any other “lego bricks” defined by the organization.
