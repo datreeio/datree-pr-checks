@@ -13,6 +13,8 @@ jobs:
       - image: 'circleci/node:10'
     steps:
       - datree/pull-request-title-convention
+      - run:
+          command: echo $GITHUB_TOKEN
 
 version: 2.1
 workflows:
