@@ -14,7 +14,7 @@ jobs:
     steps:
       - datree/pull-request-title-convention:
         issue_tracker: jira
-        token: 123456
+        token: '123456'
 
 version: 2.1
 workflows:
