@@ -12,8 +12,7 @@ jobs:
     docker:
       - image: 'circleci/node:10'
     steps:
-      - datree/pull-request-title-convention:
-          token: '123456'
+      - datree/pull-request-title-convention
 
 version: 2.1
 workflows:
